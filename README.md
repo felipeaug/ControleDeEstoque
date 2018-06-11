@@ -1,4 +1,1 @@
-# ControleDeEstoque
-## Controle de estoque
-
-## asasasasa
+# Software para controle de estoque de tarugos e buchas
