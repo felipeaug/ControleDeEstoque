@@ -6,3 +6,6 @@
 
 - Controle de entrada e saída;
 - Controle de fornecedores;
+- Controle de preços;
+- Informações técnicas
+- Perfis a serem usinados;
