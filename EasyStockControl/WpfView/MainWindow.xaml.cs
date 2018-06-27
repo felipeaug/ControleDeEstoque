@@ -42,5 +42,11 @@ namespace WpfView
             frmConfiguracoes configuracoes = new frmConfiguracoes();
             configuracoes.ShowDialog();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            MessageBox.Show("Tchau!");
+        }
     }
 }

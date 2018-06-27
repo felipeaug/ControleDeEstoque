@@ -8,7 +8,7 @@
         Title="frmVisualizarEstoque" Height="450" Width="800">
     <Grid>
         <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Source="C:\Users\Felipe\Desktop\Controle de estoque\EasyStockControl\Modelos\Images\imgStock.jpg" Stretch="UniformToFill" Cursor="None"/>
-        <Rectangle HorizontalAlignment="Left" Height="303" Margin="589,-92,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Left" Height="303" Margin="580,-92,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.5,0.5">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Offset="0.037"/>
@@ -24,10 +24,11 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <TextBlock HorizontalAlignment="Left" Margin="572,42,0,0" TextWrapping="Wrap" Text="Visualizar estoque" VerticalAlignment="Top" Height="26" Width="210" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="622,42,0,0" TextWrapping="Wrap" Text="Visualizar estoque" VerticalAlignment="Top" Height="26" Width="160" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="532,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="250" FontSize="30" Text="Easy Stock Control"/>
         <TextBlock HorizontalAlignment="Left" Margin="710,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="72" FontSize="30"><Run Text="201"/><Run Text="88"/><LineBreak/><Run/></TextBlock>
-        <DataGrid x:Name="dtGrideEstoque" HorizontalAlignment="Left" Height="205" Margin="10,204,0,0" VerticalAlignment="Top" Width="772"/>
+        <DataGrid IsReadOnly="True" CanUserAddRows="False" x:Name="dtGrideEstoque" HorizontalAlignment="Left" Height="205" Margin="10,204,0,0" VerticalAlignment="Top" Width="772"/>
         <Button Content="Atualizar" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="90,176,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_ClickCancelar"/>
     </Grid>
 </Window>

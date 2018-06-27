@@ -34,5 +34,10 @@ namespace WpfView
 
             dtGrideEstoque.ItemsSource = estoqueController.ListarTodos();
         }
+
+        private void Button_ClickCancelar(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

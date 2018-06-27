@@ -8,7 +8,7 @@
         Title="frmConfiguracoes" Height="450" Width="800">
     <Grid>
         <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Source="C:\Users\Felipe\Desktop\Controle de estoque\EasyStockControl\Modelos\Images\imgStock.jpg" Stretch="UniformToFill" Cursor="None"/>
-        <Rectangle HorizontalAlignment="Left" Height="303" Margin="589,-92,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Left" Height="303" Margin="580,-92,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.5,0.5">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Offset="0.037"/>
@@ -24,9 +24,10 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <TextBlock HorizontalAlignment="Left" Margin="572,42,0,0" TextWrapping="Wrap" Text="Configuracoes" VerticalAlignment="Top" Height="26" Width="210" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="655,42,0,0" TextWrapping="Wrap" Text="Configurações" VerticalAlignment="Top" Height="26" Width="127" FontSize="20"/>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text=".:: Menu ::." FontSize="40" VerticalAlignment="Top" Margin="10,126,594,0" Height="58" Width="188"/>
-        <Button Name="btnCadastroUsuario" Content="Cadastrar Usuario" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" Width="188" Height="50"/>
-        <Button Name="btnCadastroCategoria" Content="Cadastrar Categoria" HorizontalAlignment="Left" Margin="10,257,0,0" VerticalAlignment="Top" Width="188" Height="50"/>
+        <Button Name="btnCadastroUsuario" Content="Cadastrar Usuário" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" Width="188" Height="50" Click="btnCadastroUsuario_Click"/>
+        <Button Name="btnCadastroCategoria" Content="Cadastrar Categoria" HorizontalAlignment="Left" Margin="10,257,0,0" VerticalAlignment="Top" Width="188" Height="50" Click="btnCadastroCategoria_Click"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="594,359,0,0" VerticalAlignment="Top" Width="188" Height="50" Click="Button_Click"/>
     </Grid>
 </Window>

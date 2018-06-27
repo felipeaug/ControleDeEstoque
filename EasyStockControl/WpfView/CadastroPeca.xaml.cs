@@ -43,6 +43,8 @@ namespace WpfView
 
             estoque.Quantidade = txtQuantidade.Text;
 
+            //estoque.CategoriaID = ComboBoxCadastro.SelectedIndex;
+
             estoqueController.Adicionar(estoque);
 
             MessageBox.Show("Peça salva com sucesso!");
@@ -65,6 +67,28 @@ namespace WpfView
             Estoque estoque = new Estoque();
 
             dtGrideEstoque.ItemsSource = estoqueController.ListarTodos();
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ComboBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            //ComboBoxCadastro.ItemsSource = Categoria.
+            //ComboBox.Items.Add(Categoria);
+
+        }
+
+        private void ComboBoxCadastro_Loaded(object sender, RoutedEventArgs e)
+        {
+            CategoriaEstoqueController categoriaEstoqueController = new CategoriaEstoqueController();
+
+            Categoria categoria = new Categoria();
+
+            ComboBoxCadastro.ItemsSource = categoriaEstoqueController.ListarTodos();
+
         }
     }
 }

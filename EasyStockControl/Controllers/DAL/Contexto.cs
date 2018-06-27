@@ -14,7 +14,7 @@ namespace Controllers.DAL
         {
             //Database.SetInitializer(new CreateDatabaseIfNotExists<Contexto>());
 
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Contexto>());
+            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Contexto>());
         }
 
         public DbSet<Usuario> Usuarios { get; set; }

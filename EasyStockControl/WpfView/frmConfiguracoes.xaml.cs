@@ -23,5 +23,22 @@ namespace WpfView
         {
             InitializeComponent();
         }
+
+        private void btnCadastroUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            frmCadastroUsuario cadastroUsuario = new frmCadastroUsuario();
+            cadastroUsuario.ShowDialog();
+        }
+
+        private void btnCadastroCategoria_Click(object sender, RoutedEventArgs e)
+        {
+            frmCadastroCategoria cadastroCategoria = new frmCadastroCategoria();
+            cadastroCategoria.ShowDialog();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

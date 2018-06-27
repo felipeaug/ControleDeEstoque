@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\IBaseController.cs" />
+    <Compile Include="CategoriaEstoqueController.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="EstoqueController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

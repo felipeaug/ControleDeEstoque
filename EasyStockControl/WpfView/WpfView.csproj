@@ -85,6 +85,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frmCadastroCategoria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmCadastroUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frmConfiguracoes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -103,6 +111,12 @@
     </Compile>
     <Compile Include="CadastroPeca.xaml.cs">
       <DependentUpon>CadastroPeca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroCategoria.xaml.cs">
+      <DependentUpon>frmCadastroCategoria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroUsuario.xaml.cs">
+      <DependentUpon>frmCadastroUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="frmConfiguracoes.xaml.cs">
       <DependentUpon>frmConfiguracoes.xaml</DependentUpon>
