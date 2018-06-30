@@ -35,7 +35,7 @@ namespace Controllers
 
         public IList<Categoria> ListarPorDescricao(string descricao)
         {
-            throw new NotImplementedException();
+            return contexto.Categorias.Where(cat => cat.DescricaoCategoria == descricao).ToList();
         }
 
         public IList<Categoria> ListarTodos()

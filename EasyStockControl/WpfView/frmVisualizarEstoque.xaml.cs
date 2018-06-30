@@ -26,7 +26,12 @@ namespace WpfView
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_ClickCancelar(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dtGrideEstoque_Initialized(object sender, EventArgs e)
         {
             EstoqueController estoqueController = new EstoqueController();
 
@@ -35,9 +40,18 @@ namespace WpfView
             dtGrideEstoque.ItemsSource = estoqueController.ListarTodos();
         }
 
-        private void Button_ClickCancelar(object sender, RoutedEventArgs e)
+        private void btnBuscarPorId(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            EstoqueController estoqueController = new EstoqueController();
+
+            Estoque estoque = new Estoque();
+
+            ///var buscarPorId = Convert.ToInt32
+            //estoqueController.Excluir();
+
+            //var itemExcluido = Convert.ToInt32(IdPrencheTela.Text);
+            //estoqueController.Excluir(itemExcluido);
+            //MessageBox.Show("Peça excluída com sucesso");
         }
     }
 }

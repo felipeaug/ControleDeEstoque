@@ -47,6 +47,7 @@ namespace WpfView
 
                 MessageBox.Show("Categoria incluída com sucesso!");
 
+                dtGridCategoria.ItemsSource = categoriaEstoqueController.ListarTodos();
             }
         }
 
@@ -60,6 +61,16 @@ namespace WpfView
             CategoriaEstoqueController categoriaEstoqueController = new CategoriaEstoqueController();
 
             //Categoria categoria = new Categoria();
+
+            dtGridCategoria.ItemsSource = categoriaEstoqueController.ListarTodos();
+        }
+
+        private void dtGridCategoria_Initialized(object sender, EventArgs e)
+        {
+
+            CategoriaEstoqueController categoriaEstoqueController = new CategoriaEstoqueController();
+
+            Categoria categoria = new Categoria();
 
             dtGridCategoria.ItemsSource = categoriaEstoqueController.ListarTodos();
         }
