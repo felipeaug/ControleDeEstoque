@@ -49,11 +49,20 @@ namespace WpfView
 
             estoque.CategoriaID = ComboBoxCadastro.SelectedIndex;
 
-            estoqueController.Adicionar(estoque);
+            try
+            {
 
-            MessageBox.Show("Peça salva com sucesso!");
+                estoqueController.Adicionar(estoque);
 
-            dtGrideEstoque.ItemsSource = estoqueController.ListarTodos();
+                MessageBox.Show("Peça salva com sucesso!");
+
+                dtGrideEstoque.ItemsSource = estoqueController.ListarTodos();
+
+            }
+            catch
+            {
+                MessageBox.Show("Existem campos vazios, favor verificar");
+            }
         }
 
         private void btnLimpar_Click(object sender, RoutedEventArgs e)

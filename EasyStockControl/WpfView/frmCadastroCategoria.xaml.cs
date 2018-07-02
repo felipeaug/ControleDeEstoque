@@ -56,15 +56,6 @@ namespace WpfView
             this.Close();
         }
 
-        private void btnListarCategoria_Click(object sender, RoutedEventArgs e)
-        {
-            CategoriaEstoqueController categoriaEstoqueController = new CategoriaEstoqueController();
-
-            //Categoria categoria = new Categoria();
-
-            dtGridCategoria.ItemsSource = categoriaEstoqueController.ListarTodos();
-        }
-
         private void dtGridCategoria_Initialized(object sender, EventArgs e)
         {
 

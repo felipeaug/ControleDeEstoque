@@ -25,19 +25,19 @@
             </Rectangle.RenderTransform>
         </Rectangle>
         <TextBlock HorizontalAlignment="Left" Margin="629,42,0,0" TextWrapping="Wrap" Text="Cadastro Usuário" VerticalAlignment="Top" Height="26" Width="153" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text=". : : Cadastro Usuário : : ." FontSize="40" VerticalAlignment="Top" Margin="10,126,260,0" Height="58" Width="522"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,184,0,0" TextWrapping="Wrap" Text="Login:" VerticalAlignment="Top"/>
+        <TextBox Name="txtLogin" HorizontalAlignment="Left" Height="23" Margin="10,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,250,0,0" TextWrapping="Wrap" Text="Senha:" VerticalAlignment="Top"/>
+        <PasswordBox Name="txtSenha" HorizontalAlignment="Left" Margin="10,271,0,0" VerticalAlignment="Top" Width="400" Height="23"/>
 
-        <TextBlock HorizontalAlignment="Left" Margin="10,139,0,0" TextWrapping="Wrap" Text="Login:" VerticalAlignment="Top"/>
-        <TextBox Name="txtLogin" HorizontalAlignment="Left" Height="23" Margin="10,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,188,0,0" TextWrapping="Wrap" Text="Senha:" VerticalAlignment="Top"/>
-        <PasswordBox Name="txtSenha" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" Width="400" Height="23"/>
-
-        <TextBlock HorizontalAlignment="Left" Margin="10,237,0,0" TextWrapping="Wrap" Text="Cargo:" VerticalAlignment="Top"/>
-        <TextBox Name="txtCargo" HorizontalAlignment="Left" Height="23" Margin="10,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,286,0,0" TextWrapping="Wrap" Text="Ativo:" VerticalAlignment="Top"/>
-        <CheckBox Name="checkSim" Content="Sim" HorizontalAlignment="Left" Margin="10,307,0,0" VerticalAlignment="Top"/>
-        <CheckBox Name="checkNao" Content="Não" HorizontalAlignment="Left" Margin="55,307,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="10,338,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="90,338,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,299,0,0" TextWrapping="Wrap" Text="Cargo:" VerticalAlignment="Top"/>
+        <TextBox Name="txtCargo" HorizontalAlignment="Left" Height="23" Margin="10,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,348,0,0" TextWrapping="Wrap" Text="Ativo:" VerticalAlignment="Top"/>
+        <CheckBox Name="checkSim" Content="Sim" HorizontalAlignment="Left" Margin="10,369,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="checkNao" Content="Não" HorizontalAlignment="Left" Margin="55,369,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="10,389,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="90,389,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
         <DataGrid HorizontalAlignment="Left" Height="219" Margin="433,139,0,0" VerticalAlignment="Top" Width="349"/>
     </Grid>
 </Window>

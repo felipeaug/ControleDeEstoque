@@ -12,7 +12,7 @@ namespace Controllers.DAL
     {
         public Contexto() : base("strConn")
         {
-            //Database.SetInitializer(new CreateDatabaseIfNotExists<Contexto>());
+            Database.SetInitializer(new CreateDatabaseIfNotExists<Contexto>());
 
             //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Contexto>());
         }

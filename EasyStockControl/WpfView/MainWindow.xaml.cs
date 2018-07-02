@@ -46,7 +46,7 @@ namespace WpfView
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            MessageBox.Show("Tchau!");
+            MessageBox.Show("Até logo!");
         }
     }
 }

@@ -40,18 +40,20 @@ namespace WpfView
             dtGrideEstoque.ItemsSource = estoqueController.ListarTodos();
         }
 
-        private void btnBuscarPorId(object sender, RoutedEventArgs e)
+        private void btnBuscarPorDescricao(object sender, RoutedEventArgs e)
         {
+            if (txtBuscaPorDescricao == null)
+            {
+            MessageBox.Show("Não existe peça cadastrada");
+            }
+            else
+            {
+            MessageBox.Show("Achamos!");
             EstoqueController estoqueController = new EstoqueController();
-
             Estoque estoque = new Estoque();
-
-            ///var buscarPorId = Convert.ToInt32
-            //estoqueController.Excluir();
-
-            //var itemExcluido = Convert.ToInt32(IdPrencheTela.Text);
-            //estoqueController.Excluir(itemExcluido);
-            //MessageBox.Show("Peça excluída com sucesso");
+                    dtGrideEstoque.ItemsSource = new List<Estoque>();
+                    dtGrideEstoque.ItemsSource = estoqueController.ListarPorDescricao(txtBuscaPorDescricao.Text);
+                }
         }
     }
 }

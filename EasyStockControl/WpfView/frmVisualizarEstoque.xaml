@@ -24,11 +24,12 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <TextBlock HorizontalAlignment="Left" Margin="710,42,0,0" TextWrapping="Wrap" Text="Buscar" VerticalAlignment="Top" Height="26" Width="72" FontSize="20"/>
-        <DataGrid IsReadOnly="True" CanUserAddRows="False" x:Name="dtGrideEstoque" HorizontalAlignment="Left" Height="250" Margin="10,159,0,0" VerticalAlignment="Top" Width="400" Initialized="dtGrideEstoque_Initialized"/>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="630,389,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_ClickCancelar"/>
-        <TextBlock HorizontalAlignment="Left" Margin="415,159,0,0" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top"/>
-        <TextBox Name="txtBuscarPorId" HorizontalAlignment="Left" Height="23" Margin="415,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367"/>
-        <Button Content="Buscar" HorizontalAlignment="Left" Margin="415,208,0,0" VerticalAlignment="Top" Width="75" Click="btnBuscarPorId"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text=". : : Fazer busca : : ." FontSize="40" VerticalAlignment="Top" Margin="10,126,260,0" Height="58" Width="522"/>
+        <TextBlock HorizontalAlignment="Left" Margin="600,42,0,0" TextWrapping="Wrap" Text="Buscar por descrição" VerticalAlignment="Top" Height="26" Width="182" FontSize="20"/>
+        <DataGrid IsReadOnly="True" CanUserAddRows="False" x:Name="dtGrideEstoque" HorizontalAlignment="Left" Height="220" Margin="10,189,0,0" VerticalAlignment="Top" Width="400" Initialized="dtGrideEstoque_Initialized"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="495,238,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_ClickCancelar"/>
+        <TextBlock HorizontalAlignment="Left" Margin="415,189,0,0" TextWrapping="Wrap" Text="Descrição:" VerticalAlignment="Top"/>
+        <TextBox Name="txtBuscaPorDescricao" HorizontalAlignment="Left" Height="23" Margin="415,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="415,238,0,0" VerticalAlignment="Top" Width="75" Click="btnBuscarPorDescricao"/>
     </Grid>
 </Window>

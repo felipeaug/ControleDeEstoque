@@ -44,7 +44,7 @@ namespace Controllers
 
         public IList<Estoque> ListarPorDescricao(string descricao)
         {
-            return contexto.Estoque.Where(est => est.Descricao == descricao).ToList();
+            return contexto.Estoque.Where(est => est.Descricao.Contains(descricao)).ToList();
         }
 
         public IList<Estoque> ListarTodos()

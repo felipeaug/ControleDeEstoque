@@ -11,9 +11,9 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Source="C:\Users\Felipe\Desktop\Controle de estoque\EasyStockControl\Modelos\Images\imgStock.jpg" Stretch="UniformToFill" Cursor="None"/>
         <TextBlock HorizontalAlignment="Left" Margin="532,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="250" FontSize="30" Text="Easy Stock Control"/>
         <TextBlock HorizontalAlignment="Left" Margin="710,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="72" FontSize="30"><Run Text="201"/><Run Text="88"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text=". : : Menu - Geral : : ." FontSize="40" VerticalAlignment="Top" Margin="10,126,401,0" Height="58" Width="381"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text=". : : Menu - Geral : : ." FontSize="40" VerticalAlignment="Top" Margin="10,126,260,0" Height="58" Width="522"/>
         <Button Name="btnCadastro" Content="Cadastrar/Editar/Excluir" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" Width="188" Height="50" Click="btnCadastro_Click"/>
-        <Button Name="btnVisualizar" Content="Visualizar estoque" HorizontalAlignment="Left" Margin="203,184,0,0" VerticalAlignment="Top" Width="188" Height="50" Click="btnVisualizar_Click"/>
+        <Button Name="btnVisualizar" Content="Buscar estoque" HorizontalAlignment="Left" Margin="203,184,0,0" VerticalAlignment="Top" Width="188" Height="50" Click="btnVisualizar_Click"/>
         <Button Name="btnConfiguracoes" Content="Configurações" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="188" Height="50" Click="btnConfiguracoes_Click"/>
         <Button Content="Sair" HorizontalAlignment="Left" Margin="203,239,0,0" VerticalAlignment="Top" Width="188" Height="50" Click="Button_Click"/>
 

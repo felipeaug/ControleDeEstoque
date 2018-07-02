@@ -24,7 +24,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Cadastro Peça" FontSize="40" VerticalAlignment="Top" Margin="10,126,401,0" Height="58" Width="381"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text=". : : Cadastro Peça : : ." FontSize="40" VerticalAlignment="Top" Margin="10,126,260,0" Height="58" Width="522"/>
         <TextBlock HorizontalAlignment="Left" Margin="572,42,0,0" TextWrapping="Wrap" Text="Cadastrar/Editar/Excluir" VerticalAlignment="Top" Height="26" Width="210" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,184,0,0" TextWrapping="Wrap" Text="Referência:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtReferencia" HorizontalAlignment="Left" Height="23" Margin="10,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="369"/>
