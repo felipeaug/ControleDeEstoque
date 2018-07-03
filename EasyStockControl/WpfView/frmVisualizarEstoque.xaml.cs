@@ -42,7 +42,7 @@ namespace WpfView
 
         private void btnBuscarPorDescricao(object sender, RoutedEventArgs e)
         {
-            if (txtBuscaPorDescricao == null)
+            /*if (txtBuscaPorDescricao == null)
             {
             MessageBox.Show("Não existe peça cadastrada");
             }
@@ -53,7 +53,12 @@ namespace WpfView
             Estoque estoque = new Estoque();
                     dtGrideEstoque.ItemsSource = new List<Estoque>();
                     dtGrideEstoque.ItemsSource = estoqueController.ListarPorDescricao(txtBuscaPorDescricao.Text);
-                }
+                }*/
+
+            EstoqueController estoqueController = new EstoqueController();
+            Estoque estoque = new Estoque();
+            dtGrideEstoque.ItemsSource = new List<Estoque>();
+            dtGrideEstoque.ItemsSource = estoqueController.ListarPorDescricao(txtBuscaPorDescricao.Text);
         }
     }
 }

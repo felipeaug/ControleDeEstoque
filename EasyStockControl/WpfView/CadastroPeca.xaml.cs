@@ -28,6 +28,7 @@ namespace WpfView
             btnExcluir.Visibility = Visibility.Hidden;
             IdPrencheTela.Visibility = Visibility.Hidden;
             txtPreencheTela.Visibility = Visibility.Hidden;
+            btnListar.Visibility = Visibility.Hidden;
         }
 
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
@@ -39,18 +40,20 @@ namespace WpfView
             //estoque.EstoqueID = txtCodigo.Text;
             //NÃO É NECESSÁRIO CRIAR O ID, POIS O BANCO IRÁ GERAR AUTOMATICAMENTE
 
-            estoque.Referencia = txtReferencia.Text;
 
-            estoque.Descricao = txtDescricao.Text;
-
-            estoque.Preco = txtPreco.Text;
-
-            estoque.Quantidade = txtQuantidade.Text;
-
-            estoque.CategoriaID = ComboBoxCadastro.SelectedIndex;
 
             try
             {
+
+                estoque.Referencia = txtReferencia.Text;
+
+                estoque.Descricao = txtDescricao.Text;
+
+                estoque.Preco = txtPreco.Text;
+
+                estoque.Quantidade = txtQuantidade.Text;
+
+                estoque.CategoriaID = ComboBoxCadastro.SelectedIndex;
 
                 estoqueController.Adicionar(estoque);
 
@@ -105,17 +108,25 @@ namespace WpfView
 
         public void Preenche(Estoque a)
         {
-            IdPrencheTela.Text = Convert.ToString(a.EstoqueID);
-            IdPrencheTela.IsEnabled = false;
-            txtDescricao.Text = a.Descricao;
-            txtReferencia.Text = a.Referencia;
-            txtPreco.Text = a.Preco;
-            txtQuantidade.Text = a.Quantidade;
-            ComboBoxCadastro.SelectedItem = a.CategoriaID;
-            
+            try
+            {
+                IdPrencheTela.Text = Convert.ToString(a.EstoqueID);
+                IdPrencheTela.IsEnabled = false;
+                txtDescricao.Text = a.Descricao;
+                txtReferencia.Text = a.Referencia;
+                txtPreco.Text = a.Preco;
+                txtQuantidade.Text = a.Quantidade;
+                ComboBoxCadastro.SelectedItem = a.CategoriaID;
 
-            btnEditar.Visibility = Visibility.Visible;
-            btnExcluir.Visibility = Visibility.Visible;
+
+                btnEditar.Visibility = Visibility.Visible;
+                btnExcluir.Visibility = Visibility.Visible;
+            }
+            catch
+            {
+                MessageBox.Show("Atualizado com sucesso");
+                btnListar.Visibility = Visibility.Hidden;
+            }
         }
 
         private void Button_ClickEditar(object sender, RoutedEventArgs e)
@@ -139,6 +150,10 @@ namespace WpfView
             estoqueController.Editar(estoque);
 
             MessageBox.Show("Peça editada com sucesso!");
+            MessageBox.Show("Favor atualizar");
+            btnListar.Visibility = Visibility.Visible;
+            btnExcluir.Visibility = Visibility.Hidden;
+
             //dtGrideEstoque.ItemsSource = estoqueController.ListarTodos();
 
             btnEditar.Visibility = Visibility.Visible;
@@ -173,6 +188,10 @@ namespace WpfView
             var itemExcluido = Convert.ToInt32(IdPrencheTela.Text);
             estoqueController.Excluir(itemExcluido);
             MessageBox.Show("Peça excluída com sucesso");
+            MessageBox.Show("Favor atualizar");
+            btnListar.Visibility = Visibility.Visible;
+
+        
         }
 
         private void dtGrideEstoque_Initialized(object sender, EventArgs e)

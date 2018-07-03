@@ -34,16 +34,18 @@
         <TextBox Name="txtPreco" HorizontalAlignment="Left" Height="23" Margin="10,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="369"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,316,0,0" TextWrapping="Wrap" Text="Quantidade:" VerticalAlignment="Top"/>
         <TextBox Name="txtQuantidade" HorizontalAlignment="Left" Height="22" Margin="10,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="369"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,368,0,0" TextWrapping="Wrap" Text="Categoria:" VerticalAlignment="Top"/>
-        <ComboBox Name="ComboBoxCadastro" DisplayMemberPath="DescricaoCategoria" HorizontalAlignment="Left" Margin="69,368,0,0" VerticalAlignment="Top" Width="138" Loaded="ComboBoxCadastro_Loaded"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,364,0,0" TextWrapping="Wrap" Text="Categoria:" VerticalAlignment="Top"/>
+        <ComboBox Name="ComboBoxCadastro" DisplayMemberPath="DescricaoCategoria" HorizontalAlignment="Left" Margin="69,364,0,0" VerticalAlignment="Top" Width="138" Loaded="ComboBoxCadastro_Loaded" SelectedIndex="0"/>
         <DataGrid IsReadOnly="True" CanUserAddRows="True" x:Name="dtGrideEstoque" HorizontalAlignment="Left" Height="154" Margin="384,205,0,0" VerticalAlignment="Top" Width="398" SelectionChanged="dtGrideEstoque_SelectionChanged" Initialized="dtGrideEstoque_Initialized"/>
-        <Button Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="303,369,0,0" VerticalAlignment="Top" Width="76" Click="btnSalvar_Click"/>
-        <Button Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="384,369,0,0" VerticalAlignment="Top" Width="76" Click="btnLimpar_Click"/>
-        <Button x:Name="btnListar" Content="Listar" HorizontalAlignment="Left" Margin="465,369,0,0" VerticalAlignment="Top" Width="76" Click="btnListar_Click"/>
-        <Button Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="546,369,0,0" VerticalAlignment="Top" Width="75" Click="Button_ClickEditar"/>
-        <Button Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="626,369,0,0" VerticalAlignment="Top" Width="76" Click="btnExcluir_Click"/>
-        <Button Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="707,369,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
-        <TextBox Name="IdPrencheTela" HorizontalAlignment="Left" Height="20" Margin="230,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
-        <TextBlock Name="txtPreencheTela" HorizontalAlignment="Left" Margin="212,369,0,0" TextWrapping="Wrap" Text="Id:" VerticalAlignment="Top" Height="21"/>
+        <Button Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="384,364,0,0" VerticalAlignment="Top" Width="76" Click="btnSalvar_Click"/>
+        <Button Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="465,364,0,0" VerticalAlignment="Top" Width="76" Click="btnLimpar_Click"/>
+
+
+        <Button Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="706,364,0,0" VerticalAlignment="Top" Width="76" Click="btnExcluir_Click"/>
+        <Button Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="546,364,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
+        <Button Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="626,364,0,0" VerticalAlignment="Top" Width="75" Click="Button_ClickEditar"/>
+        <Button Background="Red" x:Name="btnListar" Content="Atualizar" HorizontalAlignment="Left" Margin="706,180,0,0" VerticalAlignment="Top" Width="76" Click="btnListar_Click"/>
+        <TextBox Name="IdPrencheTela" HorizontalAlignment="Left" Height="20" Margin="290,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89"/>
+        <TextBlock Name="txtPreencheTela" HorizontalAlignment="Left" Margin="212,364,0,0" TextWrapping="Wrap" Text="Identificação:" VerticalAlignment="Top" Height="21" Width="73"/>
     </Grid>
 </Window>
