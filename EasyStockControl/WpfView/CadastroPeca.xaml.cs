@@ -40,8 +40,6 @@ namespace WpfView
             //estoque.EstoqueID = txtCodigo.Text;
             //NÃO É NECESSÁRIO CRIAR O ID, POIS O BANCO IRÁ GERAR AUTOMATICAMENTE
 
-
-
             try
             {
 
@@ -82,10 +80,12 @@ namespace WpfView
         {
             IdPrencheTela.Text = (" ");
 
+            CarregarGridEstoque();
+        }
+
+        private void CarregarGridEstoque()
+        {
             EstoqueController estoqueController = new EstoqueController();
-
-            Estoque estoque = new Estoque();
-
             dtGrideEstoque.ItemsSource = estoqueController.ListarTodos();
         }
 
@@ -150,9 +150,13 @@ namespace WpfView
             estoqueController.Editar(estoque);
 
             MessageBox.Show("Peça editada com sucesso!");
-            MessageBox.Show("Favor atualizar");
-            btnListar.Visibility = Visibility.Visible;
-            btnExcluir.Visibility = Visibility.Hidden;
+
+            //MessageBox.Show("Favor atualizar");
+
+            CarregarGridEstoque();
+
+            //btnListar.Visibility = Visibility.Visible;
+            //btnExcluir.Visibility = Visibility.Hidden;
 
             //dtGrideEstoque.ItemsSource = estoqueController.ListarTodos();
 
@@ -188,10 +192,12 @@ namespace WpfView
             var itemExcluido = Convert.ToInt32(IdPrencheTela.Text);
             estoqueController.Excluir(itemExcluido);
             MessageBox.Show("Peça excluída com sucesso");
-            MessageBox.Show("Favor atualizar");
-            btnListar.Visibility = Visibility.Visible;
 
-        
+            CarregarGridEstoque();
+            //MessageBox.Show("Favor atualizar");
+            //btnListar.Visibility = Visibility.Visible;
+
+
         }
 
         private void dtGrideEstoque_Initialized(object sender, EventArgs e)

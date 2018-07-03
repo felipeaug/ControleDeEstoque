@@ -54,7 +54,6 @@ namespace WpfView
                     dtGrideEstoque.ItemsSource = new List<Estoque>();
                     dtGrideEstoque.ItemsSource = estoqueController.ListarPorDescricao(txtBuscaPorDescricao.Text);
                 }*/
-
             EstoqueController estoqueController = new EstoqueController();
             Estoque estoque = new Estoque();
             dtGrideEstoque.ItemsSource = new List<Estoque>();
